@@ -1,0 +1,224 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Regular.woff") format("woff"),
+	url("../fonts/Roboto-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Bold.woff") format("woff"),
+	url("../fonts/Roboto-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "TTFirsNeue";
+	src: url("../fonts/TTFirsNeue-Bold.woff") format("woff"),
+	url("../fonts/TTFirsNeue-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "TTFirsNeue";
+	src: url("../fonts/TTFirsNeue-Medium.woff") format("woff"),
+	url("../fonts/TTFirsNeue-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "TTFirsNeue";
+	src: url("../fonts/TTFirsNeue-Regular.woff") format("woff"),
+	url("../fonts/TTFirsNeue-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+  }
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+body {
+	min-width: 320px;
+}
+
+.ul-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+img {
+	width: 100%;
+}
+
+.hide {
+	display: none !important;
+}
+
+.container {
+	max-width: 1352px;
+	margin: 0 auto;
+	padding-right: 31px;
+	padding-left: 31px;
+  }
+
+  .btn {
+    text-align: center;
+    transition: outline .2s ease-in-out,background-color .2s ease-in-out;
+    outline-offset: -1px;
+    outline: #ff6e30 solid 3px;
+    padding: 16px 22px 15px;
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	&-orange {
+		align-self: flex-start;
+		background-color: #FF6E30;
+		&:hover {
+		  background-color: #BC572B;
+		  outline: 3px solid #BC572B;
+		}
+		&:focus {
+		  background-color: #FF6E30;
+		&:focus,
+		&:active {
+			outline: 3px solid #FF6E30;
+		}
+		&:active {
+		  background-color: #CE4307;
+		}
+	  }
+	}
+  }
+
+button,
+input {
+  border: none;
+  background: transparent;
+}
+
+.hashtag {
+	position: absolute;
+	background-color: #333333;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 7px 14px;
+	text-align: center;
+  }
+
+  .title,
+.subscribe,
+.menu__link,
+.header__tel,
+.header__inp {
+	font-family: "TTFirsNeue", sans-serif
+}
+
+.title,
+.subscribe {
+  font-size: 24px;
+}
+
+.title,
+.btn {
+  font-weight: 700;
+}
+
+.title {
+  line-height: 31px;
+}
+
+.field {
+	padding: 15px 23px 16px;
+	transition: color 0.2s ease-in-out, outline 0.2s ease-in-out;
+	&::placeholder {
+	  transition: color 0.2s ease-in-out;
+	}
+	&:hover,
+	&:hover::placeholder {
+	  color: #FF6E30;
+	}
+	&:focus {
+	  outline: 1px solid #FF6E30;
+	}
+  }
+
+
+  .date {
+	display: flex;
+	align-items: center;
+	&__calendar,
+	&__clocks {
+	  fill: #fff;
+	}
+	&__calendar {
+	  margin-right: 5px;
+	}
+	&__day {
+	  font-family: "roboto", sans-serif;
+	  font-size: 12px;
+	  line-height: 22px;
+	  color: #fff;
+	}
+	&__clocks {
+	  margin-right: 4px;
+	}
+  }
+  
+  .ymaps-2-1-79-map-copyrights-promo   {
+	display: none;
+  }
+
+  .js-validate-error-label {
+	  font-size: 10px;
+	  line-height: 11px;
+	  position: absolute;
+	  top: 2px;
+	  margin-left: 24px;
+  }
+
+@media  (max-width: 768px) {
+	.container {
+		padding-right: 27px;
+		padding-left: 27px;
+	}
+}
+
+@media  (max-width: 320px) {
+	.container {
+		padding-right: 21px;
+		padding-left: 21px;
+	}
+}
+
+	
+// imports
+@import "normalize";
+@import "header";
+@import "works";
+@import "about";
+@import "projects";
+@import "contacts";
+@import "footer";
